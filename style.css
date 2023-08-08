@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+}
+.header{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin: 6rem;
+}
+.nav-bar{
+    margin: 6rem;
+    display: flex;
+    gap: 5rem;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+
