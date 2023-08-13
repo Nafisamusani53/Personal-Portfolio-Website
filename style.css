@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Playfair+Display&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lora;
 }
 
 .container{
@@ -18,9 +20,15 @@
     justify-content: space-between;
     align-items: center;
 }
-header h1{
+.header h1{
+    
+    font-size: 3rem;
     margin: 6rem;
-    color: black;
+    color: #DCD7C9;
+    transition: all 1s linear 0s;
+}
+.header h1:hover{
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffe868, 0 0 40px #88fdff, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 .nav-bar{
     margin: 6rem;
@@ -31,8 +39,12 @@ header h1{
     list-style: none;
 }
 .nav-bar a{
+    font-size: 1.3rem;
     text-decoration: none;
-    color: black;
+    color: #EFE1D1;
+}
+.nav-bar a:hover{
+    color: #F2CD5C;
 }
 .comm{
     width: 100%;
@@ -41,31 +53,36 @@ header h1{
 #about-me{
     display: flex;
     justify-content: space-around;
+    background-size: cover;
     align-items: center;
-    background-color: bisque;
+    background-color:#1A120B;
 }
 .desc{
+    color: #EEEEEE;
     width: 35%;
 }
 .desc p{
+    line-height: 2rem;
+    font-size: 1.2rem;
     text-align: left;
 }
 .desc strong{
     font-size: 2rem;
 }
 
-.image{
-    width: 40%;
-    height: 80%;
-    background-image: url("image/image.jpg");
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-}
 .icons{
     display: flex;
     flex-direction: column;
-    width:10%
+    gap:20px;
+    transition: all 1s linear 0s;
+}
+.icons i{
+    font-size: 3rem;
+    color: #F8F0E5;
+}
+.icons i:hover{
+    color:#FFBF9B;
+    text-shadow: 2px 2px #EEEEEE;
 }
 #education{
     padding-left: 2rem;
@@ -162,3 +179,32 @@ header h1{
     height: 90%;
     color:black
 }   
+
+#contact-me{
+    padding: 0 10%;
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background: sandybrown;
+}
+.c-details{
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.call{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
