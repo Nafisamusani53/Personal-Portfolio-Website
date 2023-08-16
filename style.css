@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Lora;
+    font-family: 'Lora' , sans-serif;
     scroll-behavior: auto;
 }
 
@@ -96,9 +96,27 @@
 }
 #education{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     background-color:#222;
+}
+.down{
+    position: relative;
+    top:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.up{
+    position: relative;
+    top: 7%;
+    align-self: center;
+}
+.up h2{
+    font-size: 3rem;
+    color: #EFE1D1;
+    letter-spacing: 3px;
 }
 .card-container {
     position : relative;
@@ -121,7 +139,7 @@
     
     display : flex;
     flex-direction : column;
-    box-shadow : 0 5px 20px rgba(0, 255, 255, 0.753);
+    box-shadow : 2px 5px 10px rgba(0, 0, 0, 0.753);
     transition : 0.3s ease-in-out;
     border-radius : 15px;
   }
@@ -137,7 +155,7 @@
     
     top : -40%;
     left: 8px;
-    box-shadow : 0 5px 20px rgba(0, 255, 255, 0.2);
+    box-shadow : 0 5px 20px rgba(159, 158, 158, 0.2);
     z-index : 1;
   }
   
@@ -150,7 +168,7 @@
     position : relative;
     top : -140px;
     padding : 10px 15px;
-    color : #ffffff;
+    color : #EFE1D1;
     text-align : center;
     
     visibility : hidden;
@@ -168,58 +186,51 @@
   }
 #skills{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: #222;
 }
+.skills-heading{
+    position: relative;
+    top: 9%;
+}
+.skills-heading h2{
+    font-size: 3rem;
+    color: #EFE1D1;
+    letter-spacing: 2px;
+}
 .box{
-    width: 80%;
-    height: 80%;
-    padding:1rem;
-    /* background-color: antiquewhite; */
+    position: relative;
+    width: 75%;
+    height: 70%;
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 4%;
+    column-gap: 3%;
 }
-.s-box{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.glass{
-    position: relative;
-    width: 70%;
-    height: 90%;
-    background-color: black;
-    border-radius: 2rem;
+.skills-box{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.glass h2{
-    color: white;
-}
-#html{
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    bottom: 0;
-    border-radius: 2rem;
-    background-color: rgba(155, 204, 246, 0.722);
-    transition: all 3s linear 0s;
+.inside-box{
+    width: 80%;
+    height: 90%;
+    background-color: #2d2d2d;
+    box-shadow : 2px 5px 10px rgba(0, 0, 0, 0.753);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    transition: 0.3s ease-in;
 }
 
-.glass:first-of-type  > #html{
-    height: 90%;
-    color:black
-}   
+.skills-box:hover .inside-box{
+    transform: scale(110%);
+} 
 
 #contact-me{
     padding: 0 10%;
